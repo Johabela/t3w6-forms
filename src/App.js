@@ -1,4 +1,5 @@
 
+
 // React Router parts:
 // - BrowserRouter needs to exist higher up in the component tree than whatever we are writing Routes in
 // - Routes need to exist, determine what content is rendered on which route eg. /about for <About /> 
@@ -9,6 +10,7 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import Navbar from './components/Navbar';
+import PokemonFetcherPage from './pages/PokemonFetcherPage';
 
 function App() {
   return (
@@ -44,6 +46,9 @@ function App() {
           <Route path="contact" element={<ContactPage />} />
         </Route>
 
+        <Route path="/pokemon" element={<PokemonFetcherPage />} />
+        <Route path="/pokemon/:pokemonId" element={<PokemonFetcherPage />} />
+
       </Routes>
 
     </div>
@@ -51,6 +56,3 @@ function App() {
 }
 
 export default App;
-
-
-
