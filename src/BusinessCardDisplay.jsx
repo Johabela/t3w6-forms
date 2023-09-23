@@ -1,5 +1,7 @@
 
 // recives some data nad render it 
+
+
 export default function BusinessCardDisplay(props){
 	return(
 		<div>
